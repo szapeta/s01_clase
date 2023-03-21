@@ -1,0 +1,13 @@
+[Unit]
+Description=Servicio creado para la practica 4
+After=network.target
+ 
+[Service]
+User=root
+WorkingDirectory=/home/sergio/Documentos/USAC/sopes1/Clase/s01_clase/actividad4/ejecutable.sh
+Type=simple
+ExecStart=/home/sergio/Documentos/USAC/sopes1/Clase/s01_clase/actividad4/ejecutable.sh
+GuessMainPID=no
+ 
+[Install]
+WantedBy=multi-user.target
